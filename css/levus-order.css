@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+#example{
+    margin:10px 200px;
+}
+
+.levus-order-items{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:10px;
+}
+.levus-order-header{
+    display:flex;
+    padding:5px 0;
+}
+.levus-order-header .active{
+    color: red;
+}
+.levus-order-header > div{
+    padding:0 5px;
+    cursor:pointer;
+}
+.levus-order-items > div{
+    border:1px solid red;
+    height:200px;
+    text-align:center;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:column; 
+}
+.levus-order-items p{
+    font-weight:bold;
+    font-size:30px;
+}
+.levus-order-items .hide{
+    display: none;
+}

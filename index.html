@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>levus-order</title>
+    <link rel="stylesheet" href="css/levus-order.css">
+</head>
+<body>
+
+    <div id="example">
+        <div class="levus-order">
+            <div class="levus-order-header">
+                Filtering: 
+                <div data-head="" class="active">all</div>
+                <div data-head="one">one</div>
+                <div data-head="two">two</div>
+                <div data-head="three">three</div>
+                <div data-head="four">four</div>
+            </div>
+            <div class="levus-order-items">
+                <div data-item="one,two,three"><p>1</p> one,two,three</div>
+                <div data-item="two,three,four"><p>2</p> two,three,four</div>
+                <div data-item="two,four"><p>3</p>two,four</div>
+                <div data-item="one,two,four"><p>4</p>one,two,four</div>
+                <div data-item="one"><p>5</p>one</div>
+                <div data-item="one,three,four"><p> 6</p>one,three,four</div>
+                <div data-item="one,two,three,four"><p> 7</p>one,two,three,four</div>
+                <div data-item="two,three"><p>8</p>two,three</div>
+                <div data-item="three,four"><p>9</p>three,four</div>
+                <div data-item="one,three,four"><p>10</p>one,three,four</div>
+                <div data-item="one,two,four"><p>11</p>one,two,four</div>
+                <div data-item="one,three"><p>12</p>one,three</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/levus-order.js"></script>
+</body>
+</html>
