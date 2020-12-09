@@ -1,23 +1,31 @@
 // 9-12-2020
-const header = document.querySelectorAll('.levus-order-header > div');
-const items = document.querySelectorAll('.levus-order-items > div');
+{
+    const header = document.querySelectorAll('.levus-order-header > div');
+    const items = document.querySelectorAll('.levus-order-items > div');
 
-header.forEach(head => {
-    head.addEventListener('click', function(){
-        const current = this;
-        header.forEach(head => head.className = '');
-        current.className = 'active';
+    header.forEach(head => {
+        head.addEventListener('click', function(){
 
-        // console.log(current.dataset.head)
+            // зберігаємо значення поточної позиції
+            const current = this;
 
-        items.forEach(item => {
+            // прибираємо усі класи ...
+            header.forEach(head => head.className = '');
 
-            if(item.dataset.item.includes(current.dataset.head)){
-                item.className = '';
-            } else{
-                item.className = 'hide';
-            }
+            // ... крім поточного. поточному присвоюємо
+            current.className = 'active';
 
+            // перебираємо елементи
+            items.forEach(item => {
+                
+                // порівнюємо елемент на співпадіння і видаляємо класс, який приховує 
+                if(item.dataset.item.includes(current.dataset.head)){
+                    item.className = '';
+                } else{
+                    item.className = 'hide';
+                }
+
+            });
         });
     });
-});
+}
