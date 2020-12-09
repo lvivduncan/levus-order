@@ -1,7 +1,7 @@
 // 9-12-2020
 {
-    const header = document.querySelectorAll('.levus-order-header > div');
-    const items = document.querySelectorAll('.levus-order-items > div');
+    const header = document.querySelectorAll('.levus-order-header > div'),
+          items = document.querySelectorAll('.levus-order-items > div');
 
     header.forEach(head => {
         head.addEventListener('click', function(){
